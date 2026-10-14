@@ -1,0 +1,13 @@
+{
+  "locale": "zh_CN",
+  "last_verified": "2026-07-12",
+  "psychological_support": "12356",
+  "police": "110",
+  "medical_emergency": "120",
+  "campus_support": "学校辅导员或学校心理中心",
+  "trusted_contact": "家人、朋友、老师或其他能实际到场的可信任者",
+  "sources": [
+    "https://www.nhc.gov.cn/yzygj/c100068/202412/49a1a65386cd4be582d4702fd0926ee8.shtml",
+    "https://bjca.miit.gov.cn/zwgk/tzgg/art/2022/art_8d4eb93ee3424f30826c97ee400e8937.html"
+  ]
+}

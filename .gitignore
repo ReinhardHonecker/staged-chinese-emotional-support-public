@@ -1,0 +1,44 @@
+# Secrets and local provider configuration
+.env
+.env.*
+.streamlit/secrets.toml
+secrets.toml
+
+# Python and IDE state
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest-tmp/
+pytest-cache-files-*/
+.tmp/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+
+# Runtime data and generated output
+*.log
+outputs/
+dist/
+data/training/
+*.jsonl
+data/dialogue_logs.json
+data/runtime_metrics.sqlite3
+*.sqlite3
+
+# Course submission material and generated archives are kept outside this repo
+reports/
+course_materials/
+*.docx
+*.ppt
+*.pptx
+*.zip
+
+# This public snapshot does not distribute trained model weights.
+*.joblib
+
+# Operating-system files
+.DS_Store
+Thumbs.db

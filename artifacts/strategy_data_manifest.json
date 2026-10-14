@@ -1,0 +1,25 @@
+{
+  "dataset": "SoulChatCorpus",
+  "dataset_url": "https://www.modelscope.cn/datasets/YIRONGCHEN/SoulChatCorpus",
+  "project_url": "https://github.com/scutcyr/SoulChat",
+  "license": "See THIRD_PARTY_NOTICES.md; this project applies a conservative non-commercial research and education boundary",
+  "source_revision": "f67630511a443f33517a1c4af61c379314f5c5c4",
+  "source_sha256": "c604f4a8a0bed0498f26f9405045b37c36b61e6f81b4f7e288aef87281a6cdb1",
+  "source_size_bytes": 907380685,
+  "sample_size": 12000,
+  "seed": 42,
+  "generated_at": "2026-07-12T21:09:22.524809+00:00",
+  "filter_counts": {
+    "accepted": 1482620,
+    "code_or_url": 1,
+    "conversations": 258353,
+    "diagnosis_or_coercion": 5710,
+    "duplicate": 875,
+    "incomplete": 1298,
+    "language": 217,
+    "length": 5510,
+    "safety": 21976,
+    "sensitive": 11
+  },
+  "sample_sha256": "56d2549e7cb98ff2da6c79aaf6875963b3859d7073fda3b50a6bef8c28710032"
+}

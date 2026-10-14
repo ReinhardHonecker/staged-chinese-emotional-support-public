@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this course project, cite this repository and the upstream SoulChat work listed in THIRD_PARTY_NOTICES.md. / 如果使用本课程项目，请引用本仓库以及 THIRD_PARTY_NOTICES.md 中列出的 SoulChat 上游工作。"
+title: "Staged Chinese Emotional Support / 分阶段中文情感支持"
+type: software
+authors:
+  - name: "ReinhardHonecker"
+    website: "https://github.com/ReinhardHonecker"
+version: 0.2.0-public.1
+date-released: 2026-10-14
+repository-code: "https://github.com/ReinhardHonecker/staged-chinese-emotional-support-public"
+license: PolyForm-Noncommercial-1.0.0
+keywords:
+  - natural-language-processing
+  - emotional-support
+  - safety-routing
+  - streamlit

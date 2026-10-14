@@ -1,0 +1,13 @@
+【兼容说明】当前主流程不再调用本文件；权威安全分析由 risk_router.py 与 state_analysis_prompt.txt 共同完成。本文件仅供旧版对比，不得称为临床心理风险评估。
+
+任务名称：危机相关语言信号识别与安全分流。
+
+内部状态：
+S0 无危机信号；S1 高困扰但无当前自伤/死亡想法；S2 含义模糊、第三方或他伤需澄清；S3 当前相关想法已确认、紧迫性待厘清；S4 已有具体计划/可用手段、危险物在手且无法控制，或不能保证短时安全。
+
+必须区分：本人/第三方/引用/新闻/课堂/研究；当前/历史；肯定/否定/模糊/转述；自伤/结束生命/他伤。明确否定、历史当前无和引用不得被关键词覆盖；“没有具体计划”不得因包含“具体计划”误判 S4。
+
+只输出 JSON：status、subject、time_reference、polarity、harm_target、directness、needs_clarification、has_current_thoughts、has_plan_or_means、can_stay_safe、evidence、reason。
+
+用户输入：
+{user_input}

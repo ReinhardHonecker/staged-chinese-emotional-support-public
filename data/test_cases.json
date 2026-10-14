@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "input": "最近考试快到了，我总是担心自己考不好。",
+    "expected_emotion": "焦虑",
+    "expected_risk": "低风险"
+  },
+  {
+    "id": 2,
+    "input": "我最近学习任务太多了，感觉压力很大。",
+    "expected_emotion": "压力",
+    "expected_risk": "低风险"
+  },
+  {
+    "id": 3,
+    "input": "我和朋友吵架了，现在特别生气。",
+    "expected_emotion": "愤怒",
+    "expected_risk": "低风险"
+  },
+  {
+    "id": 4,
+    "input": "感觉没有人理解我，我总是一个人。",
+    "expected_emotion": "孤独",
+    "expected_risk": "低风险"
+  },
+  {
+    "id": 5,
+    "input": "我真的撑不下去了，感觉没有希望。",
+    "expected_emotion": "悲伤",
+    "expected_risk": "中风险"
+  },
+  {
+    "id": 6,
+    "input": "我不想活了，感觉活着没有意义。",
+    "expected_emotion": "悲伤",
+    "expected_risk": "高风险"
+  }
+]

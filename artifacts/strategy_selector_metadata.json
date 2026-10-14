@@ -1,0 +1,152 @@
+{
+  "model_version": "soulchat-tfidf-logreg-v1-5447431b77",
+  "accepted": false,
+  "acceptance_thresholds": {
+    "macro_f1": 0.55,
+    "improvement_over_majority": 0.1,
+    "top2_accuracy": 0.75,
+    "min_samples_per_class": 20
+  },
+  "teacher_models": [
+    "deepseek-v4-flash",
+    "deepseek-v4-pro"
+  ],
+  "teacher_audit": {
+    "flash_count": 12000,
+    "pro_audit_count": 922,
+    "primary_strategy_agreement": 0.5043383947939263,
+    "pro_unusable_count": 26,
+    "pro_low_confidence_count": 1
+  },
+  "training_method": "char TF-IDF(2-5)+OneHot+balanced LogisticRegression",
+  "best_c": 2.0,
+  "random_seed": 42,
+  "sample_counts": {
+    "source": 12000,
+    "accepted_for_training": 11752,
+    "train": 9391,
+    "validation": 1182,
+    "test": 1179
+  },
+  "class_distribution": {
+    "具体复述": 6,
+    "力量确认": 1756,
+    "征求建议许可": 27,
+    "总结问题地图": 5,
+    "情绪反映": 640,
+    "情绪验证": 2312,
+    "提供信息": 6028,
+    "最小行动": 54,
+    "比较方案": 14,
+    "澄清问题": 335,
+    "短时稳定": 211,
+    "邀请表达": 364
+  },
+  "classes_below_minimum": [
+    "具体复述",
+    "总结问题地图",
+    "比较方案",
+    "回顾调整"
+  ],
+  "conversation_group_leakage": 0,
+  "majority_class": "提供信息",
+  "majority_macro_f1": 0.068047006155568,
+  "validation_candidates": [
+    {
+      "c": 0.5,
+      "macro_f1": 0.32632293022887365
+    },
+    {
+      "c": 1.0,
+      "macro_f1": 0.36675971295179044
+    },
+    {
+      "c": 2.0,
+      "macro_f1": 0.4325040399207506
+    }
+  ],
+  "test_metrics": {
+    "accuracy": 0.5928753180661578,
+    "macro_f1": 0.4972794119838214,
+    "weighted_f1": 0.6529759819645342,
+    "top2_accuracy": 0.8490245971162002,
+    "classification_report": {
+      "力量确认": {
+        "precision": 0.55,
+        "recall": 0.6790123456790124,
+        "f1-score": 0.6077348066298343,
+        "support": 162.0
+      },
+      "征求建议许可": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "情绪反映": {
+        "precision": 0.46956521739130436,
+        "recall": 0.7105263157894737,
+        "f1-score": 0.5654450261780105,
+        "support": 76.0
+      },
+      "情绪验证": {
+        "precision": 0.6666666666666666,
+        "recall": 0.4192139737991266,
+        "f1-score": 0.514745308310992,
+        "support": 229.0
+      },
+      "提供信息": {
+        "precision": 0.989010989010989,
+        "recall": 0.5921052631578947,
+        "f1-score": 0.7407407407407407,
+        "support": 608.0
+      },
+      "最小行动": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      },
+      "比较方案": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "澄清问题": {
+        "precision": 0.9210526315789473,
+        "recall": 1.0,
+        "f1-score": 0.958904109589041,
+        "support": 35.0
+      },
+      "短时稳定": {
+        "precision": 0.03333333333333333,
+        "recall": 0.045454545454545456,
+        "f1-score": 0.038461538461538464,
+        "support": 22.0
+      },
+      "邀请表达": {
+        "precision": 0.37623762376237624,
+        "recall": 1.0,
+        "f1-score": 0.5467625899280576,
+        "support": 38.0
+      },
+      "accuracy": 0.5928753180661578,
+      "macro avg": {
+        "precision": 0.5005866461743617,
+        "recall": 0.5446312443880053,
+        "f1-score": 0.4972794119838214,
+        "support": 1179.0
+      },
+      "weighted avg": {
+        "precision": 0.7896857588198931,
+        "recall": 0.5928753180661578,
+        "f1-score": 0.6529759819645342,
+        "support": 1179.0
+      }
+    }
+  },
+  "artifact_sha256": "26f5099ad6bbaa822afbe6569d6d1647de30bcb8bc9afc0bc56a0870663b13d1",
+  "artifact_size_bytes": 5659011,
+  "generated_at": "2026-07-12T21:50:04.723644+00:00"
+}
