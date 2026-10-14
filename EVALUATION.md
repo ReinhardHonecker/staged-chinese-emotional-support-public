@@ -60,6 +60,10 @@ The weight-free public snapshot `0.2.0-public.1` was tested locally on 2026-10-1
 
 无权重公开快照 `0.2.0-public.1` 于 2026-10-14 使用 Python 3.12.13，在无服务商凭据环境完成本地验证：**319 项通过**，无失败、错误或跳过。离线评测和 `pip check` 也通过。新公开 CI 以本仓库的[工作流运行](https://github.com/ReinhardHonecker/staged-chinese-emotional-support-public/actions/workflows/ci.yml)为准，下列私有历史运行不代替它。
 
+The first public commit, [`432da021`](https://github.com/ReinhardHonecker/staged-chinese-emotional-support-public/commit/432da021930c2697656bfe32d8964dc4b7ce3a80), passed [public CI `38528204561`](https://github.com/ReinhardHonecker/staged-chinese-emotional-support-public/actions/runs/38528204561): **319 passed in 11.35s**. Offline evaluation generation and artifact upload succeeded; the seven logged summary values match the local public run. Artifact `11876896911` was verified by upload logs/metadata, not by downloading its ZIP. Later commits have their own workflow results.
+
+首个公开提交 [`432da021`](https://github.com/ReinhardHonecker/staged-chinese-emotional-support-public/commit/432da021930c2697656bfe32d8964dc4b7ce3a80) 的[公开 CI `38528204561`](https://github.com/ReinhardHonecker/staged-chinese-emotional-support-public/actions/runs/38528204561) 实际为 **319 passed in 11.35s**。离线评测生成及产物上传成功，日志七项摘要与本地公开包一致。产物 `11876896911` 仅通过上传日志和元数据核验，未下载 ZIP；后续提交使用各自的工作流结果。
+
 The public run reproduced all seven rule-based summary values in the table below. Its complete JSON is **not equal** to the old weight-bearing report: `ab_comparison.learned_experiment.strategy_source_distribution` is now `{"rule": 180}`. Both configurations use rules, so their equality is not evidence of a learned model's performance.
 
 公开包本次重现了下表全部七项规则摘要，但完整 JSON **不等于**旧含权重报告：`ab_comparison.learned_experiment.strategy_source_distribution` 现为 `{"rule": 180}`。两种配置实际都使用规则，因此相同结果不是学习模型效果证据。

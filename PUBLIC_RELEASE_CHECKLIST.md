@@ -17,11 +17,11 @@ This checklist records the scope of the 2026-10-14 code publication. The owner a
 
 ## Package verification / 发布包验证
 
-- [ ] Verify that the public Git tree and its new history contain no experimental weight, original private history, private credentials, personal paths, local evidence, or generated logs.
+- [x] Verify the standalone public Git tree and new history: 85 files, no experimental weight or original private history, and no committed local evidence or generated logs. Text/commit pattern screening found only a synthetic Guard test token; no private-identity or credential finding remained. This is a bounded scan, not a security guarantee.
       核验公开 Git tree 及新历史不含实验权重、原私有历史、私人凭据、私人路径、本地证据或生成日志。
 - [x] Run the public package's automated suite and offline evaluation without provider credentials; record the actual results separately from historical private CI. Local publication run: 319 passed, offline evaluation and pip check passed; see EVALUATION.md.
       在无服务商凭据环境运行公开包全量测试与离线评测，实际结果与历史私有 CI 分别记录。
-- [ ] Confirm the new repository's CI passes without secrets and uploads the offline evaluation artifact; link only to the actual new run.
+- [x] Confirm the new repository's CI passes without secrets and uploads the offline evaluation artifact: [public run 38528204561](https://github.com/ReinhardHonecker/staged-chinese-emotional-support-public/actions/runs/38528204561), 319 passed, on initial public commit `432da021930c2697656bfe32d8964dc4b7ce3a80`.
       确认新仓库 CI 无需秘密即可通过并上传离线评测产物，只链接实际的新运行。
 - [x] Keep explicit UI-mode adherence separate from experimental blind stage routing; do not describe the class-imbalanced no-mode baseline as general effectiveness.
       区分显式 UI 模式遵循与实验性盲阶段分流，不把类别不均衡的无模式基线说成普遍有效。
@@ -29,6 +29,10 @@ This checklist records the scope of the 2026-10-14 code publication. The owner a
 The historical browser acceptance and subsequent PA-A2/R1 and dialogue-quality spot checks keep their original version attribution. No new browser run, screenshot collection, video, or hosted demo is claimed for this publication.
 
 历史浏览器验收及后续 PA-A2/R1、对话质量定点检查保留原版本归属。本次不声称新增浏览器运行、截图采集、录像或托管演示。
+
+The public CI artifact upload was checked through job logs and metadata (ID `11876896911`, 2420 bytes at verification). The ZIP was not downloaded or content-compared; the workflow's 14-day retention is not permanent evidence hosting. Later commit checks are available from the repository's Actions page.
+
+公开 CI 产物通过任务日志及元数据核验（核验时 ID `11876896911`，2420 字节），未下载 ZIP 或比对其内容。工作流的 14 天保留期不是永久证据托管；后续提交检查以本仓库 Actions 页面为准。
 
 ## Not validated for deployment / 尚未完成的部署验证
 
